@@ -5,4 +5,4 @@ class ItemtoPurchase():
         self.item_quantity = item_quantity
 
     def print_item_cost(self):
-        print(f"{self.item_name} {self.item_quantity:.2f} @ ${self.item_price:.2f} = ${(self.item_price * self.item_quantity):.2f}")
+        print(f"{self.item_name} {self.item_quantity} @ ${self.item_price:.2f} = ${(self.item_price * self.item_quantity):.2f}")
