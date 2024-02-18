@@ -1,10 +1,14 @@
 from shopping import ItemtoPurchase, ShoppingCart
 
 def add_item():
-    item_name = input("Enter the item name: ")
+    item_name = get_item()
     item_price = float(input("Enter the item price: "))
     item_quantity = int(input("Enter the item quantity: "))
     return ItemtoPurchase(item_name, item_price, item_quantity)
+
+def get_item():
+    item_name = input("Enter the item name: ")
+    return item_name
 
 def total_cost_(items):
     total_cost = 0
@@ -23,10 +27,10 @@ def menu_choice(ShopppingCart, choice):
     if choice == 'a':
         ShopppingCart.add_item(add_item())
     elif choice == 'r':
-        item_name = input("Enter the item name: ")
+        item_name = get_item()
         ShopppingCart.remove_item(item_name)
     elif choice == 'c':
-        item_name = input("Enter the item name: ")
+        item_name = get_item()
         item_quantity = int(input("Enter the new quantity: "))
         ShopppingCart.modify_item(ItemtoPurchase(item_name, 0, item_quantity))  
     elif choice == 'i':
