@@ -35,7 +35,6 @@ def menu_choice(ShopppingCart, choice):
     elif choice == 'i':
         ShopppingCart.print_description()
     elif choice == 'o':
-        print("OUTPUT SHOPPING CART")
         ShopppingCart.print_cart()
     elif choice == 'q':
         return False
