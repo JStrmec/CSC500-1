@@ -34,9 +34,7 @@ def menu_choice(ShopppingCart, choice):
         item_quantity = int(input("Enter the new quantity: "))
         ShopppingCart.modify_item(ItemtoPurchase(item_name, 0, item_quantity))  
     elif choice == 'i':
-        print("OUTPUT ITEMS' DESCRIPTIONS")
-        for item in ShopppingCart.cart_items:
-            print(f"{item.item_name}: {item.item_description}")
+        ShopppingCart.print_description()
     elif choice == 'o':
         print("OUTPUT SHOPPING CART")
         ShopppingCart.print_cart()
@@ -54,7 +52,7 @@ def print_menu(ShopppingCart):
     print("i - Output items' descriptions")
     print("o - Output shopping cart")
     print("q - Quit")
-    continue_ = input('Choose an option:')
+    choice = input('Choose an option: ')
     menu_choice(ShopppingCart, choice)
 
 

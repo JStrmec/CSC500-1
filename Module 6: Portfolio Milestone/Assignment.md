@@ -1,5 +1,5 @@
 ## Step 4: 
-Build the ShoppingCart class with the following data attributes and related methods. Note: Some can be method stubs (empty methods) initially, to be completed in later steps
+Build the ShoppingCart class with the following data attributes and related methods. Some can be method stubs (empty methods) initially, to be completed in later steps
 
 Parameterized constructor, which takes the customer name and date as parameters
 
