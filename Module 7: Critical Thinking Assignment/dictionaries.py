@@ -19,7 +19,6 @@ class Dictionaries:
         course_meeting = ['8:00 a.m.','9:00 a.m.','10:00 a.m.','11:00 a.m.','1:00 p.m.']
         course_number = self.course_number
         meeting_times = {k: v for k, v in zip(course_number, course_meeting)}
-        
         return meeting_times
 
 def main():
