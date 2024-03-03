@@ -31,8 +31,7 @@ def menu_choice(ShopppingCart, choice):
         ShopppingCart.remove_item(item_name)
     elif choice == 'c':
         item_name = get_item()
-        item_quantity = int(input("Enter the new quantity: "))
-        ShopppingCart.modify_item(ItemtoPurchase(item_name, 0, item_quantity))  
+        ShopppingCart.modify_item(ShopppingCart.get_item(item_name))  
     elif choice == 'i':
         ShopppingCart.print_description()
     elif choice == 'o':

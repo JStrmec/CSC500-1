@@ -16,6 +16,12 @@ class ShoppingCart():
         self.current_date = current_date
         self.cart_items = []
 
+    def get_item(self, item_name = "none"):
+        for item in self.cart_items:
+            if item.item_name == item_name:
+                return item
+        return f"Item {item_name} does not exist in cart."
+
     def add_item(self, itemtoPurchase: ItemtoPurchase = None):
         self.cart_items.append(itemtoPurchase)
 
