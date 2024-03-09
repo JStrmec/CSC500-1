@@ -53,7 +53,7 @@ def menu_choice(ShopppingCart: ShoppingCart, choice: str) -> None:
     print_menu(ShopppingCart)
 
 def print_menu(ShopppingCart) -> None:
-    print("MENU")
+    print("\nMENU")
     print("a - Add item to cart")
     print("r - Remove item from cart")
     print("c - Change item quantity")
@@ -65,7 +65,9 @@ def print_menu(ShopppingCart) -> None:
 
 
 def main() -> None:
+    print("-" * 50)
     print("Welcome to the Grocery Store")
+    print("-" * 50)
     customer_name = input("Enter your name: ")
     current_date = input("Enter the current date: ")
     ShopppingCart = ShoppingCart(customer_name=customer_name, current_date=current_date)

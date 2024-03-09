@@ -15,9 +15,9 @@ class ItemtoPurchase():
         self.description = item_description
 
     def print_item_cost(self) -> None:
-        print(f"""{self.item_name} {self.item_quantity} @ 
-              ${self.item_price:.2f} = $
-              {(self.item_price * self.item_quantity):.2f}""")
+        print(f"{self.item_name} {self.item_quantity} @" 
+              f"${self.item_price:.2f} = $"
+              f"{(self.item_price * self.item_quantity):.2f}")
 
 class ShoppingCart():
     def __init__(self, 
@@ -56,7 +56,7 @@ class ShoppingCart():
 
     def modify_item(self, 
             itemtoPurchase: ItemtoPurchase = None,
-            modify_choice:  ModifyChoice = ModifyChoice.PRICE
+            modify_choice:  ModifyChoice = ModifyChoice.QUANTITY
         ) -> None:
         if modify_choice == self.ModifyChoice.PRICE:
             itemtoPurchase.item_price = int(input("Enter the new price: "))
@@ -90,7 +90,7 @@ class ShoppingCart():
         return total_cost
 
     def print_cart(self) -> None:
-        print("OUTPUT SHOPPING CART")
+        print("\nOUTPUT SHOPPING CART")
         print(f"{self.customer_name}'s Shopping Cart - {self.current_date}")
         print(f"Number of Items: {self.get_num_items_in_cart()}")
         print()
@@ -101,7 +101,7 @@ class ShoppingCart():
         print(f"Total: ${total_cost:.2f}")
 
     def print_description(self) -> None:
-        print("OUTPUT ITEMS' DESCRIPTIONS")
+        print("\nOUTPUT ITEMS' DESCRIPTIONS")
         print(f"{self.customer_name}'s Shopping Cart - {self.current_date}")
         print()
         print("Item Descriptions")
