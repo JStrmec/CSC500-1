@@ -58,6 +58,6 @@ def main():
     print("Welcome to the Grocery Store")
     customer_name = input("Enter your name: ")
     current_date = input("Enter the current date: ")
-    ShopppingCart = ShoppingCart(customer_name)
+    ShopppingCart = ShoppingCart(customer_name, current_date)
     print_menu(ShopppingCart)
 main()
