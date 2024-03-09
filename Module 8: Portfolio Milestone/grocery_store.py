@@ -19,12 +19,6 @@ def get_item_to_remove() -> str:
     item_name = input("Enter name of item to remove: ")
     return item_name
 
-def total_cost_(items: list[ItemtoPurchase]) -> float:
-    total_cost = 0
-    for item in items:
-        total_cost += item.item_price * item.item_quantity
-    return total_cost
-
 def reciept(items: list[ItemtoPurchase], total_cost: float) -> str:
     print("RECIEPT")
     print("TOTAL COST")
